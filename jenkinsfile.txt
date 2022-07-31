@@ -1,4 +1,4 @@
-pipeline
+opipeline
 
 {
 
@@ -18,7 +18,7 @@ steps
 
 {
 
-bat "mvn clean"
+echo "mvn clean"
 
 }
 
@@ -46,7 +46,7 @@ stage('test')
 
 steps{
 
-bat "mvn test"
+echo "mvn test"
 
 }
 
@@ -62,7 +62,7 @@ stage('Unit Testing')
 
 steps{
 
-bat "mvn compile"
+echo "mvn compile"
 
 }
 
